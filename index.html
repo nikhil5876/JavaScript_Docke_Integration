@@ -1,1 +1,22 @@
-hii
+[root@localhost] #
+<input id="i" /> 
+<pre>
+<div id="a1">Name</div>
+</pre>
+
+<script>
+	function hii(){
+		var xhr = new XMLHttpRequest();
+		inp = document.getElementById("i").value;
+		xhr.open("GET","http://192.168.43.134/cgi-bin/pro1.py?x="+ inp,true);
+		xhr.send();
+
+                xhr.onload = function () {
+		var output = xhr.responseText;
+		document.getElementById("a1").innerHTML = output;
+		};
+
+	}
+</script>
+
+<button onclick="hii();">Click here....</button>
