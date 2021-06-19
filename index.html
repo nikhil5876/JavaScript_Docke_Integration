@@ -1,8 +1,31 @@
-[root@localhost] #
-<input id="i" /> 
-<pre>
-<div id="a1">Name</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- <pre>
+
+</pre> -->
+   
+
+<pre style="color: azure;">
+<!-- <div id="a1">Name</div> -->
 </pre>
+
+<script>
+    function cmd_text(){
+        var inText;
+        inText = document.getElementById('i');
+        document.getElementById('a1').innerHTML= inText.value;
+    }
+
+</script>
+
 
 <script>
 	function hii(){
@@ -19,4 +42,22 @@
 	}
 </script>
 
-<button onclick="hii();">Click here....</button>
+<div id="topBar">
+    
+    <input id="i" onkeyup="cmd_text();" />
+    <button onclick="hii();">Click here....</button>
+
+</div>
+ 
+<div id="terminal">
+<pre style="color: azure; display: inline;" >
+    
+    [root@localhost]: <div id="a1" style="display: inline;"></div>
+    
+</pre>
+     
+</div>
+
+    
+</body>
+</html>

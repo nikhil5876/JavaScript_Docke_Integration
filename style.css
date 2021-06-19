@@ -1,0 +1,20 @@
+body {
+    background-image: url("RHEL.png");
+
+}
+
+div#terminal{
+    height: 200px;
+    width: 80%;
+    background-color: black;
+    margin: auto;
+}
+div#topBar{
+    padding: 2%;
+    width: 80%;
+    background-color: black;
+    margin: auto;
+}
+input#i{
+    margin: auto;
+}
